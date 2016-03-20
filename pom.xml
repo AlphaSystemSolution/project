@@ -23,10 +23,10 @@
 				<plugin>
 					<groupId>org.apache.cxf</groupId>
 					<artifactId>cxf-xjc-plugin</artifactId>
-					<version>2.3.0</version>
+					<version>3.0.5</version>
 					<configuration>
 						<extensions>
-							<extension>org.apache.cxf.xjcplugins:cxf-xjc-dv:2.3.0</extension>
+							<extension>org.apache.cxf.xjcplugins:cxf-xjc-dv:3.0.5</extension>
 							<extension>net.java.dev.jaxb2-commons:jaxb-fluent-api:2.1.8</extension>
                             <extension>org.jvnet.jaxb2_commons:jaxb2-default-value:1.1</extension>
 							<extension>net.java.dev.vcc.thirdparty:collection-setter-injector:0.5.0-1</extension>
