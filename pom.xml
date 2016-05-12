@@ -364,7 +364,8 @@
         <mysema.version>3.7.0</mysema.version>
 		<cglib.version>3.1</cglib.version>
 		<genOutputDirectory>${project.build.directory}/generated-sources/</genOutputDirectory>
-		<docx4j.version>3.2.2</docx4j.version>
+		<docx4j.version>3.3.0</docx4j.version>
+		<commons-lang3.version>3.4</commons-lang3.version>
 		<jide.version>3.6.5</jide.version>
 		<resteasy.version>3.0.10.Final</resteasy.version>
 	</properties>
