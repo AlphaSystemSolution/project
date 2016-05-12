@@ -146,7 +146,7 @@
 								<goal>copy-dependencies</goal>
 							</goals>
 							<configuration>
-								<outputDirectory>${project.basedir}/build/lib</outputDirectory>
+								<outputDirectory>${project.basedir}/${application.build.lib.dir}</outputDirectory>
 								<overWriteReleases>false</overWriteReleases>
 								<overWriteSnapshots>false</overWriteSnapshots>
 								<overWriteIfNewer>true</overWriteIfNewer>
@@ -165,7 +165,7 @@
 								<goal>jar</goal>
 							</goals>
 							<configuration>
-								<outputDirectory>build</outputDirectory>
+								<outputDirectory>${application.build.dir}</outputDirectory>
 								<archive>
 									<manifest>
 										<addClasspath>true</addClasspath>
@@ -233,6 +233,17 @@
 						</execution>
 					</executions>
 				</plugin>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <configuration>
+                        <filesets>
+                            <fileset>
+                                <directory>${project.basedir}/${application.build.lib.dir}</directory>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -356,6 +367,8 @@
 		<finalName></finalName>
 		<json.targetPackage></json.targetPackage>
 		<target.dir></target.dir>
+        <application.build.dir>build</application.build.dir>
+        <application.build.lib.dir>${application.build.dir}/lib</application.build.lib.dir>
 		<maven.test.skip>true</maven.test.skip>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>
