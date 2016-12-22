@@ -380,10 +380,10 @@
         <application.build.lib.dir>${application.build.dir}/lib</application.build.lib.dir>
 		<maven.test.skip>true</maven.test.skip>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>
-		<org.springframework.version>4.2.1.RELEASE</org.springframework.version>
-        <querydsl.version>4.0.7</querydsl.version>
-        <mysema.version>3.7.0</mysema.version>
+		<spring-data-mongodb.version>1.9.5.RELEASE</spring-data-mongodb.version>
+		<org.springframework.version>4.3.4.RELEASE</org.springframework.version>
+        <querydsl.version>4.1.4</querydsl.version>
+        <mysema.version>3.7.4</mysema.version>
 		<cglib.version>3.1</cglib.version>
 		<genOutputDirectory>${project.build.directory}/generated-sources/</genOutputDirectory>
 		<docx4j.version>3.3.0</docx4j.version>
